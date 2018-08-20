@@ -111,14 +111,16 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-lineage
     
-
+PRODUCT_PACKAGES += \
+    NoCutoutOverlay
+    
 # Overlays - override vendor ones
 PRODUCT_PACKAGES += \
     FrameworksResCommon \
     FrameworksResTarget \
     DevicesOverlay \
     DevicesAndroidOverlay
-    
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/handheld_core_hardware.xml
