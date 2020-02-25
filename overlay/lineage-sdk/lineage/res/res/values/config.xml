@@ -46,6 +46,7 @@
          For example, a device with notification and battery lights that supports
          pulsating and RGB control would set this config to 75. -->
     <integer name="config_deviceLightCapabilities">232</integer>
+<<<<<<< HEAD
 
     <bool name="config_haveHigherAspectRatioScreen">true</bool>
     <bool name="config_haveNotch">true</bool>
@@ -57,4 +58,6 @@
     </string-array>
 
 
+=======
+>>>>>>> 7061a6d... surya: Set config_deviceLightCapabilities
 </resources>
