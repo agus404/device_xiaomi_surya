@@ -28,4 +28,7 @@
 
     <string name="doze_brightness_sensor_type">com.google.sensor.binned_brightness</string>
 
+    <!-- FPSInfoService Fps file path -->
+    <string name="config_fpsInfoSysNode" translatable="false">/sys/class/drm/sde-crtc-0/measured_fps</string>
+
 </resources>
