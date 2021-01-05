@@ -104,6 +104,11 @@ PRODUCT_PACKAGES += \
     SecureElement \
     Tag
 
+# Notch hide overlay
+PRODUCT_PACKAGES += \
+    NotchHideOverlay \
+    NotchHideOverlaySystemUI
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
@@ -115,7 +120,7 @@ PRODUCT_COPY_FILES += \
 # Overlays - override vendor ones
 PRODUCT_PACKAGES += \
     FrameworksResCommon \
-    FrameworksResTarget 
+    FrameworksResTarget
 
 # Power
 PRODUCT_PACKAGES += \
