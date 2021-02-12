@@ -12,6 +12,13 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.adb.secure=0
 endif
 
+# Audio - fluence - these props match the ones in vendor
+PRODUCT_PRODUCT_PROPERTIES += \
+    persist.vendor.audio.fluence.voicecall=true \
+    persist.vendor.audio.fluence.voicerec=false \
+    persist.vendor.audio.fluence.speaker=true \
+    persist.vendor.audio.fluence.audiorec=false
+
 # Camera
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.camera.privapp.list=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap \
