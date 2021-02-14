@@ -153,9 +153,10 @@ PRODUCT_PACKAGES += \
     PresencePolling \
     RcsService
 
-# Soong namespaces
+# Soong namespace
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
+    $(LOCAL_PATH) \
+    kernel/xiaomi/surya
 
 # Telephony
 PRODUCT_PACKAGES += \
