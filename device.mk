@@ -60,6 +60,10 @@ PRODUCT_PACKAGES += \
     libqdMetaData \
     libqdMetaData.system
 
+# Add Prebuilt Apps
+PRODUCT_PACKAGES += \
+    QPGallery
+
 # Device Settings
 PRODUCT_PACKAGES += \
     XiaomiParts
