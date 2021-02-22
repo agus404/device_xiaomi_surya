@@ -54,6 +54,16 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Snap
 
+# Display/Graphics
+PRODUCT_PACKAGES += \
+    libdisplayconfig \
+    libqdMetaData \
+    libqdMetaData.system
+
+# Add Prebuilt Apps
+PRODUCT_PACKAGES += \
+    QPGallery
+
 # Device Settings
 PRODUCT_PACKAGES += \
     XiaomiParts
