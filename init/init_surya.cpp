@@ -93,23 +93,17 @@ void set_device_props(const std::string fingerprint,
 void load_device_properties() {
 	std::string hwname = GetProperty("ro.boot.hwname", "");
 	
-	// Set some defaults to avoid empty settings:
-	std::string model = "M2007J20CG";
-	std::string device = hwname;
-	std::string fingerprint = "POCO/surya_global/surya:10/QKQ1.200512.002/V12.0.7.0.QJGMIXM:user/release-keys";
-	std::string description = "surya_global-user 10 QKQ1.200512.002 V12.0.7.0.QJGMIXM release-keys";
-	
-	if (hwname == "surya") {
-		model = "M2007J20CG";
-	} else if (hwname == "karna") {
-		model = "M2007J20CI";
-	}
-      
-      	set_device_props(fingerprint, 
-		         description, 
-		         "Poco", 
-		         device, 
-		         model ); 
+        std::string fingerprint = "google/sunfish/sunfish:11/RQ1A.210205.004/7038034:user/release-keys";
+        std::string description = "sunfish-user 11 RQ1A.210205.004 7038034 release-keys";
+
+        if (hwname == "surya") {
+            set_device_props(fingerprint, description, "POCO", "surya", "POCO X3 NFC");
+            property_override("ro.product.mod_device", "surya_global");
+
+        } else if (hwname == "karna") {
+            set_device_props(fingerprint, description, "POCO", "karna", "POCO X3");
+            property_override("ro.product.mod_device", "surya_in_global");
+        }
 }
 
 void set_nfc()
